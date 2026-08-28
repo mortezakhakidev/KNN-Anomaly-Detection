@@ -25,7 +25,7 @@ np.random.seed(seed_value)
 
 # Load and preprocess dataset
 columns_of_interest = ["temp", "humidity"]
-data_frame = pd.read_csv('dataset/h358data_modified.csv')
+data_frame = pd.read_csv('dataset/your_dataset.csv')
 data_frame = data_frame[columns_of_interest].dropna().reset_index(drop=True)
 
 # Function to generate localized synthetic anomalies
